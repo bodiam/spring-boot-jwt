@@ -1,0 +1,23 @@
+
+### List all tasks
+GET http://localhost:8080/tasks
+Accept: application/json
+
+### Create a new task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "description": "Buy some milk"
+}
+
+### Update an existing task
+PUT http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{
+  "description": "Buy some cheese"
+}
+
+### Delete task
+DELETE http://localhost:8080/tasks/1
